@@ -1,8 +1,8 @@
 /*
 Grupo 12
-Daniel Santos
+Daniel Santos 44887
 Luís Costa 47082
-Marcus Dias
+Marcus Dias 44901
 */
 
 #ifndef _ENTRY_H

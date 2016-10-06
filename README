@@ -5,8 +5,7 @@ Este projecto organiza-se da seguinte maneira:
   encontram-se na pasta /src.
 
 - Ficheiros .h 
-  Todos os header files fornecidos pelos docentes, 
-  bem como os desenvolvidos por nós, encontram-se na pasta /include 
+  Todos os header files encontram-se na pasta /include 
 
 - Ficheiros .o
   Todos os ficheiros objecto gerados na compilação dos módulos
