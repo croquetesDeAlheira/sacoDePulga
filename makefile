@@ -1,7 +1,7 @@
-# Grupo 12
-# Daniel Santos 44887
-# Luís Costa 47082
-# Marcus Dias 44901
+#Grupo 12
+#Daniel Santos 44887
+#Luís Costa 47082
+#Marcus Dias 44901
 
 BIN = bin
 INC = include

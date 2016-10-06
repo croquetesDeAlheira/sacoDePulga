@@ -1,4 +1,5 @@
-
+#include "data.h"
+#include "entry.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -6,8 +7,6 @@
 #include <errno.h>
 #include <assert.h>
 
-#include "data.h"
-#include "entry.h"
 /* Sem comentários! Não há tempo... */
 
 int testCreate() {

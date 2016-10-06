@@ -103,12 +103,12 @@ int testDup() {
 	data2 = data_dup(data);
 
 	result = (data->data != data2->data) && 
-             (data->datasize == data2->datasize) &&
-             (memcmp(data->data, data2->data, data->datasize) == 0);
-
+                 (data->datasize == data2->datasize) &&
+                 (memcmp(data->data, data2->data, data->datasize) == 0);
 
 	data_destroy(data);
 	data_destroy(data2);
+
 	printf(" %s\n",result?"passou":"não passou");
 	return result;
 }

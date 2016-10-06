@@ -1,0 +1,17 @@
+Este projecto organiza-se da seguinte maneira:
+
+- Ficheiros .c 
+  Todos os ficheiros .c desenvolvidos por nós, 
+  encontram-se na pasta /src.
+
+- Ficheiros .h 
+  Todos os header files fornecidos pelos docentes, 
+  bem como os desenvolvidos por nós, encontram-se na pasta /include 
+
+- Ficheiros .o
+  Todos os ficheiros objecto gerados na compilação dos módulos
+  estarão na pasta /obj
+
+- Para a execução deste projecto, 
+  os ficheiros testes devem ser colocados na directoria /grupo12.
+  Os ficheiros executáveis deverão aparecer na mesma directoria, /grupo12

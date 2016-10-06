@@ -51,14 +51,14 @@ int testAddCabeca() {
 
 	if ((list = list_create()) == NULL)
 		error(1, errno, "  O teste não pode prosseguir");
-	//printf("ok create\n");
+
 	if ((data = data_create(5)) == NULL)
 		error(1, errno, "  O teste não pode prosseguir");
-	//printf("ok data_create\n");
+
 	if ((entry = entry_create("abc", data)) == NULL)
 		error(1, errno, "  O teste não pode prosseguir");
-	//printf("ok entry\n");
-	
+
+
 	memcpy(entry->value->data, "abc1", 5);
 
 	assert(list_add(NULL, entry) < 0);
@@ -66,7 +66,9 @@ int testAddCabeca() {
 
 	assert(list_add(list, NULL) < 0);
 	result = result && (list_add(list, NULL) < 0);
+
 	result = result && (list_add(list, entry) == 0);
+
 	entry2 = list_get(list, "abc");
 
 	result = result &&
@@ -93,23 +95,22 @@ int testAddVarios() {
 	printf("Módulo list -> teste adicionar vários:");
 
 	if ((list = list_create()) == NULL)
-		error(1, errno, "  O teste não pode prosseguir_1");
+		error(1, errno, "  O teste não pode prosseguir");
 
 	for(i=0; i<1024; i++) {
 		sprintf(key, "keyabc-%d",i);
 		keysize = strlen(key) + 1;
 
 		if ((data = data_create(keysize)) == NULL)
-			error(1, errno, "  O teste não pode prosseguir_2");
+			error(1, errno, "  O teste não pode prosseguir");
 
 		memcpy(data->data, key, keysize);
 		if ((entry[i] = entry_create(key, data)) == NULL)
-			error(1, errno, "  O teste não pode prosseguir_3");
+			error(1, errno, "  O teste não pode prosseguir");
 
 		data_destroy(data);
 		list_add(list, entry[i]);
 	}
-	
 
 	assert(list_size(list) == 1024);
 	result = (list_size(list) == 1024);
@@ -122,8 +123,6 @@ int testAddVarios() {
 			 strcmp(aux->key, entry[i]->key) == 0;
 		entry_destroy(entry[i]);
 	}
-	
-
 
 	list_destroy(list);
 

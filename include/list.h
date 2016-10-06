@@ -1,3 +1,10 @@
+/*
+Grupo 12
+Daniel Santos
+Luís Costa 47082
+Marcus Dias
+*/
+
 #ifndef _LIST_H
 #define _LIST_H
 
